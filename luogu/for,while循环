@@ -1,0 +1,48 @@
+total=0
+for i in range(1,51,):
+    if i%2==0:
+        total+=i
+print(f"1 到 50 之间(包含 50)所有偶数的和是{total}")
+
+count=10
+while count>0:
+    print(count)
+    count-=1
+print("发射")
+
+n=int(input())
+result=1
+for i in range(1,n+1):
+    result=result*i
+print(f"{n}的阶乘是: {result}")
+
+n=int(input())
+total_sum=0
+current_fact = 1 # 这是一个“计算器”，用来存放当前的阶乘值
+for i in range (1,n+1):
+    current_fact = current_fact * i
+    total_sum = total_sum + current_fact
+
+print(total_sum)
+
+
+for i in range(1,11):
+    if i==5:
+        continue
+    print(i)
+
+
+for num in range(100,1000):
+    a=num%10
+    b=num//10%10
+    c=num//100
+    result=a**3+b**3+c**3
+    if num==result:
+        print(f"{num}是水仙花数字")
+
+n=int(input())
+currenthangshu=1
+for i in range(1,n+1):
+    for j in range(1,n+1):
+        print('*', end=" ")
+    print()
